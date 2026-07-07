@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cosmos — Solar System Gallery</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="eyebrow">A Field Guide to the Sky</div>
+  <h1>Explore the Cosmos</h1>
+  <p>Planets, stars, and meteoroids — filter by category or click any frame for a closer look.</p>
+</header>
+
+<div class="filters" id="filters">
+  <button class="filter-btn active" data-cat="all">All</button>
+  <button class="filter-btn" data-cat="planet">Planets</button>
+  <button class="filter-btn" data-cat="star">Stars</button>
+  <button class="filter-btn" data-cat="meteoroid">Meteoroids</button>
+</div>
+
+<div class="search-wrap">
+  <input type="text" id="searchInput" placeholder="Search Jupiter, Sirius, meteoroid..." autocomplete="off">
+</div>
+
+<div class="gallery" id="gallery">
+
+  <div class="card" data-cat="planet">
+    <img src="https://i.pinimg.com/736x/48/84/77/4884773561e49c480ae5ca847325d568.jpg" alt="Mercury">
+    <div class="veil"><span>Mercury</span></div>
+  </div>
+
+  <div class="card" data-cat="planet">
+    <img src="https://i.pinimg.com/1200x/f3/69/49/f3694978fadd4fffb9a37891b742a46c.jpg" alt="Venus">
+    <div class="veil"><span>Venus</span></div>
+  </div>
+
+  <div class="card" data-cat="planet">
+    <img src="https://i.pinimg.com/1200x/bb/fa/51/bbfa51c45034b7936be044eb85494e7d.jpg" alt="Earth">
+    <div class="veil"><span>Earth</span></div>
+  </div>
+
+  <div class="card" data-cat="planet">
+    <img src="https://i.pinimg.com/736x/a9/6b/20/a96b20b76aaa9603c8c0bc2f97b567a3.jpg" alt="Mars">
+    <div class="veil"><span>Mars</span></div>
+  </div>
+
+  <div class="card" data-cat="planet">
+    <img src="https://i.pinimg.com/736x/c3/15/0d/c3150d0a2d1c4bb38764cd8fd2b794e5.jpg" alt="Jupiter">
+    <div class="veil"><span>Jupiter</span></div>
+  </div>
+
+  <div class="card" data-cat="planet">
+    <img src="https://i.pinimg.com/736x/5c/5b/e0/5c5be0286bcea58e3d4ff36664d1399b.jpg" alt="Saturn">
+    <div class="veil"><span>Saturn</span></div>
+  </div>
+
+  <div class="card" data-cat="planet">
+    <img src="https://i.pinimg.com/736x/d8/06/f9/d806f9ab1abda97f806902c40c085155.jpg" alt="Uranus">
+    <div class="veil"><span>Uranus</span></div>
+  </div>
+
+  <div class="card" data-cat="planet">
+    <img src="https://i.pinimg.com/736x/28/19/b2/2819b27118811530e90d15a9e308b51d.jpg" alt="Neptune">
+    <div class="veil"><span>Neptune</span></div>
+  </div>
+
+  <div class="card" data-cat="star">
+    <img src="https://i.pinimg.com/1200x/a1/18/7b/a1187bd19d7dcadc2eded1c5e3d7c69a.jpg" alt="The Sun">
+    <div class="veil"><span>The Sun</span></div>
+  </div>
+
+  <div class="card" data-cat="star">
+    <img src="https://i.pinimg.com/736x/6e/9e/5d/6e9e5db1a3353fa7de90757344a4d1f3.jpg" alt="Sirius">
+    <div class="veil"><span>Sirius</span></div>
+  </div>
+
+  <div class="card" data-cat="star">
+    <img src="https://i.pinimg.com/1200x/cf/3f/77/cf3f77fdc6d0b56250a60e4e34292a79.jpg" alt="Betelgeuse">
+    <div class="veil"><span>Betelgeuse</span></div>
+  </div>
+
+  <div class="card" data-cat="meteoroid">
+    <img src="https://i.pinimg.com/736x/85/70/1a/85701a4a04207dc389a0ff3870b2e569.jpg" alt="Meteoroid fragment">
+    <div class="veil"><span>Meteoroid Fragment</span></div>
+  </div>
+
+  <div class="card" data-cat="meteoroid">
+    <img src="https://i.pinimg.com/736x/6f/07/d1/6f07d1efcf01f7545acdff0be219ada8.jpg" alt="Meteoroid streak">
+    <div class="veil"><span>Meteor Streak</span></div>
+  </div>
+
+  <div class="card" data-cat="meteoroid">
+    <img src="https://i.pinimg.com/1200x/aa/17/16/aa1716199bfdce0d5644a7d3d5b1dea9.jpg" alt="Meteoroid impact">
+    <div class="veil"><span>Impact Crater</span></div>
+  </div>
+
+</div>
+
+<div class="lightbox" id="lightbox">
+  <button class="lb-close" id="lbClose">&times;</button>
+  <button class="lb-btn lb-prev" id="lbPrev">&#8249;</button>
+  <img id="lbImage" src="" alt="">
+  <button class="lb-btn lb-next" id="lbNext">&#8250;</button>
+  <div class="caption" id="lbCaption"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+
+<footer>
+  <p>Made by Lakshmi Priya ❤️</p>
+  <p>&copy; 2026 Cosmos Gallery</p>
+</footer>
+
+</html>
